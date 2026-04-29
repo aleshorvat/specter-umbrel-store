@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  watcher:
+    image: ghcr.io/aleshorvat/specterhubwatcher:latest
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA_DIR}/logs:/app/logs
+      - ${APP_SPECTERHUB_DATA_DIR}/data:/specterhub-data:ro
+    environment:
+      DB_PATH: /specterhub-data/specterhub.db
+      SSH_PASSWORD_ENCRYPTION_KEY: ${APP_SPECTERHUB_SSH_KEY}
+      TELEGRAM_BOT_TOKEN: ${APP_TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${APP_TELEGRAM_CHAT_ID}
+      POLL_INTERVAL_SECONDS: ${APP_POLL_INTERVAL_SECONDS:-300}
+      LOG_PATH: /app/logs/watcher.log
+      THRESHOLD_CPU_PERCENT: ${APP_THRESHOLD_CPU_PERCENT:-90}
+      THRESHOLD_MEMORY_PERCENT: ${APP_THRESHOLD_MEMORY_PERCENT:-90}
+      THRESHOLD_DISK_PERCENT: ${APP_THRESHOLD_DISK_PERCENT:-90}
+      THRESHOLD_CPU_TEMP_C: ${APP_THRESHOLD_CPU_TEMP_C:-80}

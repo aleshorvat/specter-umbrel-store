@@ -1,0 +1,19 @@
+manifestVersion: 1
+id: specter-specterhubwatcher
+category: developer
+name: SpecterHub Watcher
+version: 1.0.0
+tagline: SSH monitor and Telegram alerter for Windows kiosks
+description: >-
+  Background service that polls Windows kiosks over SSH, detects reboots,
+  Windows Updates, and CPU/memory/disk/temperature issues, then sends Telegram
+  alerts on state changes. Requires SpecterHub to be installed first.
+developer: Aleš Horvat
+website: https://github.com/aleshorvat/SpecterHubWatcher
+repo: https://github.com/aleshorvat/SpecterHubWatcher
+support: https://github.com/aleshorvat/SpecterHubWatcher/issues
+dependencies:
+  - specter-specterhub
+port: null
+gallery: []
+releaseNotes: Initial release
