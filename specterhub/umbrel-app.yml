@@ -1,17 +1,24 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: specter-specterhub
 category: developer
 name: SpecterHub
-version: 1.0.0
+version: "1.0.0"
 tagline: Windows kiosk monitoring dashboard
 description: >-
   Web dashboard for remotely monitoring and managing Windows kiosks over SSH.
   Tracks CPU, memory, disk, temperatures, reboots, and Windows Updates.
   Provides screenshot capture and live health charts.
+releaseNotes: Initial release
 developer: Aleš Horvat
 website: https://github.com/aleshorvat/SpecterHub
+dependencies: []
 repo: https://github.com/aleshorvat/SpecterHub
 support: https://github.com/aleshorvat/SpecterHub/issues
 port: 7474
 gallery: []
-releaseNotes: Initial release
+path: ""
+defaultUsername: admin
+deterministicPassword: false
+torOnly: false
+submitter: Aleš Horvat
+submission: https://github.com/aleshorvat/specter-umbrel-store
