@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04140c"></stop>
+      <stop offset="1" stop-color="#000000"></stop>
+    </linearGradient>
+    
+    
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"></rect>
+  
+  
+  
+    <line x1="220" y1="220" x2="300" y2="220" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+    <line x1="220" y1="220" x2="220" y2="300" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+  
+  
+    <line x1="804" y1="220" x2="724" y2="220" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+    <line x1="804" y1="220" x2="804" y2="300" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+  
+  
+    <line x1="220" y1="804" x2="300" y2="804" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+    <line x1="220" y1="804" x2="220" y2="724" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+  
+  
+    <line x1="804" y1="804" x2="724" y2="804" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+    <line x1="804" y1="804" x2="804" y2="724" stroke="#5af7a8" stroke-width="14" stroke-linecap="round"></line>
+  
+  
+  <path d="M 512 320 C 408 320 352 396 352 484 L 352 660 Q 352 678 368 678 Q 388 678 402 660 Q 426 690 450 660 Q 474 690 498 660 Q 522 690 546 660 Q 570 690 594 660 Q 618 690 642 660 Q 656 678 676 678 Q 676 678 676 660 L 676 484 C 676 396 616 320 512 320 Z" fill="#5af7a8"></path>
+  <ellipse cx="466" cy="476" rx="18" ry="26" fill="#000000"></ellipse>
+  <ellipse cx="558" cy="476" rx="18" ry="26" fill="#000000"></ellipse>
+  <ellipse cx="461" cy="468" rx="6" ry="9" fill="#bfffd9"></ellipse>
+  <ellipse cx="553" cy="468" rx="6" ry="9" fill="#bfffd9"></ellipse>
+</svg>
