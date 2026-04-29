@@ -19,7 +19,7 @@ icon: https://raw.githubusercontent.com/aleshorvat/specter-umbrel-store/main/spe
 gallery: []
 path: ""
 defaultUsername: admin
-deterministicPassword: false
+deterministicPassword: true
 torOnly: false
 submitter: Aleš Horvat
 submission: https://github.com/aleshorvat/specter-umbrel-store
