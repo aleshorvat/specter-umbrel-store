@@ -8,8 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   specterhub:
-    image: specterhub:latest
-    pull_policy: never
+    image: ghcr.io/aleshorvat/specterhub:latest
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
