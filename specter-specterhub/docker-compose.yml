@@ -2,18 +2,15 @@ version: "3.8"
 
 services:
   app_proxy:
-    image: getumbrel/app-proxy:v1
-    networks: [app-network]
     environment:
-      APP_PASSWORD: ${APP_PASSWORD}
-      APP_HOST: specterhub:3000
+      APP_HOST: specterhub
+      APP_PORT: 3000
       PROXY_AUTH_ADD: "false"
 
   specterhub:
     image: ghcr.io/aleshorvat/specterhub:latest
     pull_policy: never
     restart: unless-stopped
-    networks: [app-network]
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
     environment:
@@ -22,7 +19,3 @@ services:
       SSH_PASSWORD_ENCRYPTION_KEY: ${APP_SSH_PASSWORD_ENCRYPTION_KEY}
       ADMIN_USERNAME: ${APP_ADMIN_USERNAME:-admin}
       ADMIN_PASSWORD: ${APP_PASSWORD}
-
-networks:
-  app-network:
-    name: specter_specterhub-network
