@@ -11,6 +11,7 @@ services:
 
   specterhub:
     image: ghcr.io/aleshorvat/specterhub:latest
+    pull_policy: never
     restart: unless-stopped
     networks: [app-network]
     volumes:

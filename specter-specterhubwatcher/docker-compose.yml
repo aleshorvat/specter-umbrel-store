@@ -3,6 +3,7 @@ version: "3.8"
 services:
   watcher:
     image: ghcr.io/aleshorvat/specterhubwatcher:latest
+    pull_policy: never
     restart: unless-stopped
     volumes:
       - ${APP_DATA_DIR}/logs:/app/logs
