@@ -8,6 +8,14 @@ description: >-
   Background service that polls Windows kiosks over SSH, detects reboots,
   Windows Updates, and CPU/memory/disk/temperature issues, then sends Telegram
   alerts on state changes. Requires SpecterHub to be installed first.
+
+
+  After installation, configure Telegram credentials via SSH:
+
+  sudo nano /home/umbrel/umbrel/app-data/specter-specterhubwatcher/exports.sh
+
+  Uncomment and fill in APP_TELEGRAM_BOT_TOKEN and APP_TELEGRAM_CHAT_ID,
+  then restart the app from the Umbrel dashboard.
 releaseNotes: Initial release
 developer: Aleš Horvat
 website: https://github.com/aleshorvat/SpecterHubWatcher
