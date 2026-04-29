@@ -15,7 +15,7 @@ dependencies: []
 repo: https://github.com/aleshorvat/SpecterHub
 support: https://github.com/aleshorvat/SpecterHub/issues
 port: 7474
-icon: https://raw.githubusercontent.com/aleshorvat/specter-umbrel-store/main/specterhub/icon.svg
+icon: https://raw.githubusercontent.com/aleshorvat/specter-umbrel-store/main/specter-specterhub/icon.svg
 gallery: []
 path: ""
 defaultUsername: admin

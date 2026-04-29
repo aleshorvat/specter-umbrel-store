@@ -15,7 +15,7 @@ dependencies:
   - specter-specterhub
 repo: https://github.com/aleshorvat/SpecterHubWatcher
 support: https://github.com/aleshorvat/SpecterHubWatcher/issues
-icon: https://raw.githubusercontent.com/aleshorvat/specter-umbrel-store/main/specterhubwatcher/icon.svg
+icon: https://raw.githubusercontent.com/aleshorvat/specter-umbrel-store/main/specter-specterhubwatcher/icon.svg
 gallery: []
 path: ""
 torOnly: false
