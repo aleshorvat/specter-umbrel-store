@@ -10,12 +10,9 @@ description: >-
   alerts on state changes. Requires SpecterHub to be installed first.
 
 
-  After installation, configure Telegram credentials via SSH:
-
-  sudo nano /home/umbrel/umbrel/app-data/specter-specterhubwatcher/exports.sh
-
-  Uncomment and fill in APP_TELEGRAM_BOT_TOKEN and APP_TELEGRAM_CHAT_ID,
-  then restart the app from the Umbrel dashboard.
+  After installation, configure Telegram credentials and alert thresholds via
+  the Settings page (gear icon) in SpecterHub. Changes take effect after
+  restarting this app from the Umbrel dashboard.
 releaseNotes: Initial release
 developer: Aleš Horvat
 website: https://github.com/aleshorvat/SpecterHubWatcher
