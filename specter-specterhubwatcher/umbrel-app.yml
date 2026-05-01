@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: specter-specterhubwatcher
 category: developer
 name: SpecterHub Watcher
-version: "1.0.0"
+version: "1.1.0"
 tagline: SSH monitor and Telegram alerter for Windows kiosks
 description: >-
   Background service that polls Windows kiosks over SSH, detects reboots,
@@ -13,7 +13,14 @@ description: >-
   After installation, configure Telegram credentials and alert thresholds via
   the Settings page (gear icon) in SpecterHub. Changes take effect after
   restarting this app from the Umbrel dashboard.
-releaseNotes: Initial release
+releaseNotes: >-
+  • Settings read from SpecterHub — poll interval, alert thresholds, and Telegram credentials are now stored in the shared SQLite database and configured via the SpecterHub Settings page; .env remains as fallback
+
+
+  • Telegram alert for Update and Reboot — watcher distinguishes between a plain SpecterHub reboot and a SpecterHub-initiated update-and-reboot, sending a dedicated notification for each
+
+
+  • SSH error logging — connection failures during kiosk health checks are now logged with detail for easier troubleshooting
 developer: Aleš Horvat
 website: https://github.com/aleshorvat/SpecterHubWatcher
 dependencies:
