@@ -2,13 +2,23 @@ manifestVersion: 1.1
 id: specter-specterhub
 category: developer
 name: SpecterHub
-version: "1.0.0"
+version: "1.1.0"
 tagline: Windows kiosk monitoring dashboard
 description: >-
   Web dashboard for remotely monitoring and managing Windows kiosks over SSH.
   Tracks CPU, memory, disk, temperatures, reboots, and Windows Updates.
   Provides screenshot capture and live health charts.
-releaseNotes: Initial release
+releaseNotes: >-
+  • Update and Reboot — installs all pending Windows Updates via PSWindowsUpdate then reboots; pending update count shown on the reboot split-button dropdown
+
+
+  • SpecterHubWatcher settings page — configure poll interval, alert thresholds, and Telegram credentials directly from the SpecterHub UI without editing config files
+
+
+  • Password change — requires current password verification before accepting a new one
+
+
+  • Telegram alert for Update and Reboot events — watcher distinguishes between a plain reboot and a SpecterHub-initiated update-and-reboot
 developer: Aleš Horvat
 website: https://github.com/aleshorvat/SpecterHub
 dependencies: []
