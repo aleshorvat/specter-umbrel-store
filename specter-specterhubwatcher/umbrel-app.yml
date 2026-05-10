@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: specter-specterhubwatcher
 category: developer
 name: SpecterHub Watcher
-version: "1.1.0"
+version: "1.1.1"
 tagline: SSH monitor and Telegram alerter for Windows kiosks
 description: >-
   Background service that polls Windows kiosks over SSH, detects reboots,
